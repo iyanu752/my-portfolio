@@ -16,15 +16,11 @@ function Nav() {
         }
 
     };
+ 
+    window.addEventListener('scroll', changeBackground);
+    
 
-    useEffect = ( () => {
-        window.addEventListener('scroll', changeBackground);
 
-        return () => {
-            window.removeEventListener('scroll', changeBackground);
-        };
-
-    }, [window.scrollY]);
 
 
        
@@ -37,16 +33,17 @@ function Nav() {
             <div className="flex-div">
             <div className="logo"><img className="logo" src= {Logo} /></div>
             <div className="list-items">
-            <ul>
+            <ul className="el-ul">
                 <a className="nav-el" href="#Home"><li>Home</li></a>
                 <a className="nav-el"  href="Skills"><li>Skills</li></a>
                 <a className="nav-el" href="#Projects"><li>Projects</li></a>
+                <button className="dropdown">menu</button>
                 </ul>
             </div>
                 
                 <div className="social-icons">
                     <ul>
-
+                        <button className="drop-down">menu</button>
                     
                         <a href="#Github"><li className="social-list"> <img className="social-logo" src = {gitlogo} /></li></a>
 
