@@ -6,13 +6,20 @@
 
 body {
   background-color: #50514f;
-  margin-left: 50px;
+  overflow-x: hidden;
 }
+
+/*######### NAVBAR ###########*/ 
 
 nav {
   position: sticky;
   top: 0;
 }
+
+.nav-bar.active {
+  background-color: #3a0ca3;
+}
+
 
 .App {
   text-align: center;
@@ -21,6 +28,7 @@ nav {
 
 .logo {
   width: 100px;
+  padding-left: 10px;
 }
 
 .flex-div {
@@ -66,6 +74,8 @@ li {
   margin-right: 30px;
 }
 
+/*######### MAIN CONTENT ##########*/
+
 .container {
   display:  flex;
   flex-direction: row-reverse;
@@ -99,6 +109,7 @@ button {
     width: 200px;
     border-radius: 30px;
     border-style: none;
+
 } 
 
 .button-link {
@@ -106,6 +117,32 @@ button {
   text-decoration: none;
 }
 
+.icons-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.button-link {
+  color:#f72585;
+  padding-left: 60px;
+  
+}
+
+.resume-png {
+  width: 25px;
+}
+
+.contact-png {
+  width: 25px;
+}
+
+/*######## SKILLS #########*/
+h2 {
+  align-items: center;
+  margin-top: 200px;
+}
+
+/*########## FOR MOBILE ############*/
 
 @media only screen and (max-width: 600px) {
   body {
@@ -119,11 +156,22 @@ button {
 
 .paragraph-flex { 
   width: 70%;
+  
 }
 
-.social-logo {
+.social-icons {
   display: none;
 }
 
+.list-items {
+  display: none;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 }
