@@ -1,5 +1,7 @@
 import React from "react";
 import Illustration from "../cyborg.png";
+import Contact from "../icons8-contact-48.png";
+import Resume from "../icons8-resume-48.png";
 
 
 function Main() {
@@ -7,7 +9,7 @@ function Main() {
     <div className="container">
 
     <div className="illustration">
-                <img className="cyborg-png" src= {Illustration} />
+                <img className="cyborg-png" src= {Illustration}  alt="illustration"/>
             </div>
 
         <div className="paragraph-flex">
@@ -25,21 +27,25 @@ function Main() {
                         I'm always excited to connect with fellow enthusiasts in the tech and creative communities. 
                 </p>
 
-                {/* <div className="buttons">
+                 <div className="buttons">
                 <div className="contact-div">
                 <button className="contact-btn">
-                    <a className="button-link" href="#">Contact me</a>
-                    <img src=" " />
+                <div className="icons-flex">
+                <div><a className="button-link" href="#">Contact</a></div>
+                <div><img className="resume-png" src= {Contact} /></div>
+                </div>
                     </button>
                 </div>
 
                 <div className="contact-div">
                 <button className="resume-btn">
-                    <a className="button-link" href="#">Resume</a>
-                    <img src=" " />
+                <div className="icons-flex">
+                <div><a className="button-link" href="#">Resume</a></div>
+                <div><img className="resume-png" src= {Resume} /></div>
+                </div>
                     </button>  
                 </div>
-                </div>             */}
+                </div>            
                     
         </div>
 
