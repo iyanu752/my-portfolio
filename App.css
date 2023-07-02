@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 
 * {
   box-sizing: border-box;
@@ -187,6 +189,104 @@ article {
 }
 
 
+/*########### PROJECTS ##############*/
+
+.projects-cont {
+  width: 50%;
+  margin: 10rem auto;
+  
+}
+
+.slick-slider, .slick-list {
+  padding:  2rem 0;
+}
+
+
+
+.slick-dots {
+  padding-bottom: 20px;
+}
+
+
+.projects-div {
+  width:100%;
+  background-color: #3a0ca3;
+  border-radius: 30px;
+  padding-top: 0px;
+  padding-bottom: 15px;
+  cursor: pointer;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  z-index: 1000;
+  
+
+}
+
+.projects-spacing {
+  padding: 10px;
+}
+
+.project-btns{
+  display: flex;
+  gap: 15px;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.img-adj {
+  border-radius: 30px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  transition: transform 400ms ease-in-out;
+}
+
+.center .slick-center .projects-div:hover > img {
+  transform: scale(1.05);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+} 
+
+
+.disc {
+  text-align: justify;
+
+}
+
+.disc > h3 {
+  padding-left: 20px;
+}
+
+.disc > p {
+  padding-left: 20px;
+}
+
+.center .slick-center .projects-div {
+    transform: scale(1.15);
+    background-color: #f72585;
+    transition: all 400ms ease-in-out;
+    opacity: 1;
+  }
+
+
+.center .projects-div {
+  opacity: 0.5;
+}
+
+.projects-btn {
+  width: 40%;
+  cursor: pointer;
+}
+
+
+
+
+
 
 /*########## FOR MOBILE ############*/
 
@@ -223,6 +323,24 @@ article {
 .scroll-container {
     margin: 8px 30px;
 }
+
+.projects-cont {
+  width: 80%;
+  margin: 10rem auto;
+}
+.slick-dots {
+  padding-bottom:40px;
+}
+
+.projects-btn {
+  width: 45%;
+  cursor: pointer;
+}
+
+
+
+
+
 
 
 
