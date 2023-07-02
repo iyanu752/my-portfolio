@@ -18,6 +18,7 @@ nav {
 
 .nav-bar.active {
   background-color: #3a0ca3;
+  z-index: 5;
 }
 
 
@@ -87,14 +88,25 @@ li {
 
 .paragraph-flex { 
   width: 50%; 
-  text-align: left;
+  text-align: justify;
   display: flex;
   flex-direction: column;
+  text-justify: innerword;
 
 }
 
 .cyborg-png {
   width: 350px;
+  animation: updown 3s linear infinite;
+}
+@keyframes updown {
+  0%,100% {
+    transform: translateY(-50px);
+  }
+  50%{
+    transform: translateY(10px);
+  }
+
 }
 
 .buttons {
@@ -136,11 +148,45 @@ button {
   width: 25px;
 }
 
-/*######## SKILLS #########*/
+/*######## SKILLS ARTICLE #########*/
+
 h2 {
   align-items: center;
   margin-top: 200px;
 }
+
+article {
+  margin: 50px;
+  text-align: justify;
+  justify-content: center;
+}
+
+/*############## SKILLS ###########*/
+
+
+.skills-scroll {
+  overflow: hidden;
+}
+
+.scroll-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color:#f72585;
+  padding: 20px;
+
+}
+
+.scroll-container {
+  background-color: #3a0ca3;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 8px 100px;
+  z-index: 3;
+
+}
+
+
 
 /*########## FOR MOBILE ############*/
 
@@ -173,5 +219,12 @@ h2 {
   align-items: center;
   justify-content: center;
 }
+
+.scroll-container {
+    margin: 8px 30px;
+}
+
+
+
 
 }

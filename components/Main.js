@@ -31,8 +31,8 @@ function Main() {
                 <div className="contact-div">
                 <button className="contact-btn">
                 <div className="icons-flex">
-                <div><a className="button-link" href="#">Contact</a></div>
-                <div><img className="resume-png" src= {Contact} /></div>
+                <div><a className="button-link" href="contact">Contact</a></div>
+                <div><img className="resume-png" src= {Contact} alt="contact png"/></div>
                 </div>
                     </button>
                 </div>
@@ -40,8 +40,8 @@ function Main() {
                 <div className="contact-div">
                 <button className="resume-btn">
                 <div className="icons-flex">
-                <div><a className="button-link" href="#">Resume</a></div>
-                <div><img className="resume-png" src= {Resume} /></div>
+                <div><a className="button-link" href="resume">Resume</a></div>
+                <div><img className="resume-png" src= {Resume} alt="resume-png"/></div>
                 </div>
                     </button>  
                 </div>
