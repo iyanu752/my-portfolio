@@ -10,16 +10,12 @@ function Skills({img, name}) {
     return (
     <div className="skills-cont">
             <h2> SKILLS </h2>
-            <article>
-            I'm a passionate developer with a strong foundation in HTML and CSS,
-            allowing me to craft visually appealing and responsive user interfaces. 
-            Building upon these skills, 
-            I've delved into the world of JavaScript, 
-            honing my abilities to create interactive elements that enhance the overall user experience. 
-            Currently, I'm embarking on an exciting journey with React, 
-            where I'm constantly pushing my boundaries to develop dynamic and efficient web applications. 
-            </article>
-
+            <p className="skills-p">
+            I am a passionate software developer with a focus on creating visually appealing and responsive user interfaces.
+            I have also developed proficiency in JavaScript, allowing me to enhance user experiences through interactive elements.
+            Currently, I am excitedly exploring React and working towards developing dynamic and efficient web applications. 
+            Continuously learning and growing, I am eager to collaborate on innovative projects and contribute to the creation of exceptional digital experiences.  
+            </p>
         <div className="skills-scroll">
 
             <div className="scroll-items">

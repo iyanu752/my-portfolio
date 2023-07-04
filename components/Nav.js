@@ -1,8 +1,10 @@
 import { useState } from "react";
 import React from "react";
-import Logo from "../logo.png";
-import gitlogo from "../icons8-github-64.png";
-import linkedinlogo from "../icons8-linkedin-64.png";
+import Logo from "../icons/logo.png";
+import gitlogo from "../icons/icons8-github-64.png";
+import linkedinlogo from "../icons/icons8-linkedin-64.png";
+import Contact from "./contact";
+import Projects from "./projects";
 
 
 function Nav() {
@@ -35,7 +37,7 @@ function Nav() {
             <ul className="el-ul">
                 <a className="nav-el" href="#Home"><li>Home</li></a>
                 <a className="nav-el"  href="Skills"><li>Skills</li></a>
-                <a className="nav-el" href="#Projects"><li>Projects</li></a>
+                <a className="nav-el" href=  <Projects/> ><li>Projects</li></a>
                 </ul>
             </div> 
              

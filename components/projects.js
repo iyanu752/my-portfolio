@@ -6,7 +6,7 @@ import Slider from "react-slick";
 function Projects () {
 
     var settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         className: "center",
         centerMode: true,

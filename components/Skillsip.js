@@ -6,9 +6,9 @@ import Marquee from "react-fast-marquee";
 
 function Skillip () {
     return(
-        <div>
+        <div className="skills-ip">
         <h2> SKILLS I AM CURRENTLY LEARNING </h2>
-        <p>
+        <p className="skillsip-p">
         As I continue to learn and grow in this ever-evolving field, 
         I'm eager to collaborate on innovative projects and
          contribute my expertise to create exceptional digital experiences.

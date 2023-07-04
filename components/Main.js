@@ -1,7 +1,7 @@
 import React from "react";
-import Illustration from "../cyborg.png";
-import Contact from "../icons8-contact-48.png";
-import Resume from "../icons8-resume-48.png";
+import Illustration from "../icons/cyborg.png";
+import Contact from "../icons/icons8-contact-48.png";
+import Resume from "../icons/icons8-resume-48.png";
 
 
 function Main() {
@@ -13,7 +13,6 @@ function Main() {
             </div>
 
         <div className="paragraph-flex">
-            <span> Welcome to my portfolio</span>
             <h1>{`Hi!, I'm Iyanu`} <span className="wrap">Fullstack Developer</span></h1>
                 <p>
                         Hello there! My name is Iyanu, and I'm thrilled to welcome you to my portfolio website. I
