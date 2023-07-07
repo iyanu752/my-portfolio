@@ -51,6 +51,12 @@ label {
 
 }
 
+.wrap {
+  background: -webkit-linear-gradient(135deg, rgba(75,25,212,1) 0%, rgba(113,33,225,1) 48%, rgba(232,45,244,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 button {
   font-family: 'Audiowide', cursive;
 }
@@ -58,6 +64,11 @@ button {
 .skill-names {
   color: #ffffff;
   font-family: 'Audiowide', cursive;;
+}
+
+a{
+  text-decoration: none;
+  color: black;
 }
 
 body {
@@ -77,6 +88,8 @@ nav {
   background: rgb(0,0,0);
   background: linear-gradient(165deg, rgba(0,0,0,1) 0%, rgba(33,33,33,1) 100%);
   z-index: 5;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 
@@ -179,13 +192,16 @@ button {
     width: 200px;
     border-radius: 30px;
     border-style: none;
+    cursor: pointer;
 
 } 
 
 .resume-btn {
   background: rgb(232,22,217);
   background: linear-gradient(231deg, rgba(232,22,217,1) 0%, rgba(199,38,144,1) 100%);
+  
 }
+
 
 .contact-btn {
   background: rgb(71,71,71);
@@ -326,11 +342,11 @@ h2 {
 }
 
 .disc > h3 {
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 .disc > p {
-  padding-left: 20px;
+  padding: 10px;
 }
 
 .center .slick-center .projects-div {
@@ -349,57 +365,46 @@ h2 {
 .projects-btn {
   width: 40%;
   cursor: pointer;
+  font-family: 'Audiowide', cursive;;
+}
+
+.project-dis {
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
+.project-p {
+  font-size: 0.5rem;
+  text-align: left;
 }
 
 /*############ FOOTER ############*/
-
-.submit-div {
-  padding: 50px;
-  padding-bottom: 40px;
-
-}
-
-
-.submit-btn {
-  width: 15%;
-  border-radius: 20px;
-
-}
-
-.contact-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 50px;
-  padding-right: 0px;
-  gap: 30px;
-}
-
-.input-box {
-  width: 100%;
-  padding: 5px;
-  border-radius: 10px;
-  border-style: none;
-}
-
-.message-box {
-  width: 30%;
-  padding: 40px;
-  border-radius: 10px;
-  border-style: none;
-}
 
 .contact-bg {
 background: rgb(0,0,0);
 background: linear-gradient(165deg, rgba(0,0,0,0) 0%, rgba(33,33,33,0) 100%);
   margin: 0;
   padding-bottom: 20px;
+
+}
+form {
+    padding: 70px;
+
+
 }
 
-.gmail {
-  text-decoration: none;
-  color: #ffffff;
+.contact-cont {
+  display: flex;
+  flex-direction: column;
+  background-color: #7209b7;
+  padding: 1%;
+  max-width: 300px;
+
+
+
+
 }
+
 
 /*########## FOR MOBILE ############*/
 
@@ -422,10 +427,12 @@ p {
 
 .skills-p {
   padding: 20px;
+  overflow-x: hidden;
 }
 
 .skillsip-p {
   padding: 20px;
+  overflow-x: hidden;
 }
 
 
