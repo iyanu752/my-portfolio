@@ -3,8 +3,7 @@ import React from "react";
 import Logo from "../icons/logo.png";
 import gitlogo from "../icons/icons8-github-64.png";
 import linkedinlogo from "../icons/icons8-linkedin-64.png";
-import Contact from "./contact";
-import Projects from "./projects";
+import { NavLink } from "react-router-dom";
 
 
 function Nav() {
@@ -35,16 +34,18 @@ function Nav() {
             <div className="logo"><img className="logo" src= {Logo} alt="iyanu-logo" /></div>
             <div className="list-items">
             <ul className="el-ul">
-                <a className="nav-el" href="#Home"><li>Home</li></a>
+                <a className="nav-el" href="Home"><li>Home</li></a>
                 <a className="nav-el"  href="Skills"><li>Skills</li></a>
-                <a className="nav-el" href=  <Projects/> ><li>Projects</li></a>
+                <a className="nav-el" href="Tools" ><li>Tools</li></a>
+                <a className="nav-el" href= "Projects" ><li>Projects</li></a>
+                <a className="nav-el" href="contact"> <li> Contact </li></a>
                 </ul>
             </div> 
              
                 <div className="social-icons">
                     <ul>
-                        <a href="#Github"><li className="social-list"> <img className="social-logo" src = {gitlogo} alt="github-logo" /></li></a>
-                        <a href="#LinkedIn"> <li className="social-list"><img className="social-logo" src = {linkedinlogo} alt="linkedin-logo" /></li></a>
+                        <a href="https://github.com/iyanu752/"target="_blank" rel="noopener noreferrer" ><li className="social-list"> <img className="social-logo" src = {gitlogo} alt="github-logo" /></li></a>
+                        <a href="https://www.linkedin.com/in/ahmed-iyanuoluwa-b4111a26a/"target="_blank" rel="noopener noreferrer"> <li className="social-list"><img className="social-logo" src = {linkedinlogo} alt="linkedin-logo" /></li></a>
                     </ul>    
                 </div>
             </div>

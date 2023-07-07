@@ -1,7 +1,7 @@
 import React from "react";
 import Illustration from "../icons/cyborg.png";
-import Contact from "../icons/icons8-contact-48.png";
 import Resume from "../icons/icons8-resume-48.png";
+import { TypeAnimation } from 'react-type-animation';
 
 
 function Main() {
@@ -13,10 +13,22 @@ function Main() {
             </div>
 
         <div className="paragraph-flex">
-            <h1>{`Hi!, I'm Iyanu`} <span className="wrap">Fullstack Developer</span></h1>
+            <h1>{`Hi!, I'm Iyanu`} </h1>
+                                <span className="wrap"><TypeAnimation
+                    sequence={[
+                        // Same substring at the start will only be typed once, initially
+                        'I am a Frontend developer',
+                        1000,
+                        'I am a web developer',
+                        1000,
+                    ]}
+                    speed={50}
+                    style={{ fontSize: '1.5em', fontFamily: 'Audiowide' }}
+                    repeat={Infinity}
+                    /></span>
                 <p>
                         Hello there! My name is Iyanu, and I'm thrilled to welcome you to my portfolio website. I
-                        am a passionate and creative full-stack software developer with a wide range of interests and skills beyond coding.
+                        am a passionate and creative frontend software developer with a wide range of interests and skills beyond coding.
                         When I'm not immersed in the world of programming, I find joy in expressing my artistic side. 
                         Drawing and animating allow me to explore my imagination and bring my ideas to life.
                 </p>
@@ -28,18 +40,9 @@ function Main() {
 
                  <div className="buttons">
                 <div className="contact-div">
-                <button className="contact-btn">
-                <div className="icons-flex">
-                <div><a className="button-link" href="contact">Contact</a></div>
-                <div><img className="resume-png" src= {Contact} alt="contact png"/></div>
-                </div>
-                    </button>
-                </div>
-
-                <div className="contact-div">
                 <button className="resume-btn">
                 <div className="icons-flex">
-                <div><a className="button-link" href="resume">Resume</a></div>
+                <div><a className="button-link" href="https://drive.google.com/file/d/1vj7WzDJ1J78HfcbK1AEX5XGzW8HF-qrp/view?usp=sharing/"target="_blank" rel="noopener noreferrer">Resume</a></div>
                 <div><img className="resume-png" src= {Resume} alt="resume-png"/></div>
                 </div>
                     </button>  
