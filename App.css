@@ -61,6 +61,8 @@ button {
   font-family: 'Audiowide', cursive;
 }
 
+
+
 .skill-names {
   color: #ffffff;
   font-family: 'Audiowide', cursive;;
@@ -139,12 +141,26 @@ li {
 .social-logo{
   width: 40px;
   display: flex;
+
+}
+
+.social-logo:hover {
+  animation: hover 3s linear infinite;
+}
+
+@keyframes hover {
+  0%,100% {
+    transform: translateY(-5px);
+}
+
 }
 
 .social-list {
   padding: 5px;
   margin-right: 50px;
 }
+
+
 
 /*######### MAIN CONTENT ##########*/
 
@@ -199,9 +215,20 @@ button {
 .resume-btn {
   background: rgb(232,22,217);
   background: linear-gradient(231deg, rgba(232,22,217,1) 0%, rgba(199,38,144,1) 100%);
-  
 }
 
+
+.resume-btn:hover {
+  animation: hover 3s linear infinite;
+ 
+}
+
+@keyframes hover {
+  0%,100% {
+    transform: translateY(-5px);
+  }
+
+}
 
 .contact-btn {
   background: rgb(71,71,71);
@@ -363,7 +390,7 @@ h2 {
 }
 
 .projects-btn {
-  width: 40%;
+  width: 50%;
   cursor: pointer;
   font-family: 'Audiowide', cursive;;
 }
@@ -383,28 +410,55 @@ h2 {
 .contact-bg {
 background: rgb(0,0,0);
 background: linear-gradient(165deg, rgba(0,0,0,0) 0%, rgba(33,33,33,0) 100%);
-  margin: 0;
-  padding-bottom: 20px;
-
-}
-form {
-    padding: 70px;
-
-
 }
 
 .contact-cont {
   display: flex;
   flex-direction: column;
-  background-color: #7209b7;
-  padding: 1%;
-  max-width: 300px;
+  padding: 50px;
+}
+
+.contact-row {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.contact-box {
+  padding: 15px;
+  width: 20%;
+  border-radius: 10px;
+} 
+
+.message-box {
+    width: 25%;
+    padding: 5%;
+    border-radius: 10px;
+}
+
+.submit-btn{
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  animation: hover 3s linear infinite;
+}
 
 
-
+@keyframes hover {
+  0%,100% {
+    transform: translateY(-5px);
+  }
 
 }
 
+.istrue {
+  color: greenyellow;
+}
+
+.isfalse{
+  color: red;
+}
 
 /*########## FOR MOBILE ############*/
 
@@ -461,7 +515,7 @@ p {
 }
 
 .projects-cont {
-  width: 80%;
+  width: 90%;
   margin: 10rem auto;
 }
 .slick-dots {
@@ -480,26 +534,16 @@ p {
   border-style: none;
 }
 
-.message-box {
-  width: 70%;
-  padding: 40px;
+.contact-box {
+  padding: 15px;
+  width: 100%;
   border-radius: 10px;
-  border-style: none;
-}
+} 
 
-.contact-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 50px;
-  gap: 30px;
-}
-
-.submit-btn {
-  width: 25%;
-  border-radius: 20px;
-  text-align: center;
-
+.message-box {
+    width: 100%;
+    padding: 5%;
+    border-radius: 10px;
 }
 
 
