@@ -19,7 +19,7 @@ function Main() {
                         // Same substring at the start will only be typed once, initially
                         'I am a Frontend developer',
                         1000,
-                        'I am a web developer',
+                        'I am a Frontend engineer',
                         1000,
                     ]}
                     speed={50}

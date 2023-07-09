@@ -6,12 +6,12 @@ import react from '../icons/icons8-react-native-96.png';
 import Marquee from "react-fast-marquee";
 
 
-function Skills({img, name}) {
+function Skills() {
     return (
     <div className="skills-cont">
             <h2> SKILLS </h2>
             <p className="skills-p">
-            I am a passionate software developer with a focus on creating visually appealing and responsive user interfaces.
+            I am a passionate frontend software developer with a focus on creating visually appealing and responsive user interfaces.
             I have also developed proficiency in JavaScript, allowing me to enhance user experiences through interactive elements.
             Currently, I am excitedly exploring React and working towards developing dynamic and efficient web applications. 
             Continuously learning and growing, I am eager to collaborate on innovative projects and contribute to the creation of exceptional digital experiences.  

@@ -1,5 +1,9 @@
 import React from "react"; 
 import Slider from "react-slick";
+import Agepng from "../images/age calculator app.jpg";
+import Huddle from "../images/huddle.jpg";
+import Lead from "../images/lead tracker.jpg";
+import Face from "../images/Face-Attendance.jpg";
 
 
 
@@ -54,15 +58,15 @@ function Projects () {
                     <div className="projects-spacing">
 
                         <div className="projects-div">
-                            <img className ="img-adj" src="https://i.pinimg.com/564x/44/49/3d/44493dda088ecc4f4f103ce1940a2338.jpg"/>
+                            <img className ="img-adj" src={Lead} alt="LEAD TRACKER IMG"/>
                             <div className=" disc">
                              <h3 className="project-dis">LEAD-TRACKER-CHROME-EXTENTION</h3>
                              <p className="project-p">
-                                The Lead Tracker Chrome Extension is a  tool that helps you manage leads and maximize your sales potential.
+                                I created a Lead tracker chrome extension, The Lead Tracker Chrome Extension is a  tool that helps you manage leads and maximize your sales potential.
                             </p>
                                 <div className="project-btns">
-                                    <button className="projects-btn" >live site</button>
-                                 <button className="projects-btn">github </button>
+                                    <button className="projects-btn" ><a href="https://drive.google.com/drive/folders/1JhUR0sxo15ING_HnNQNgPjoW6fur5Yh3?usp=sharing/"target="_blank" rel="noopener noreferrer"> Download Extension</a></button>
+                                 <button className="projects-btn"><a href="https://github.com/iyanu752/LEAD-TRACKER-CHROME-EXTENTION/tree/main/"target="_blank" rel="noopener noreferrer">  Source Code </a></button>
                                  </div>
                             </div>
                         </div>
@@ -71,15 +75,15 @@ function Projects () {
 
                     <div className="projects-spacing">
                         <div className="projects-div">
-                            <img  className ="img-adj" src="https://i.pinimg.com/564x/44/49/3d/44493dda088ecc4f4f103ce1940a2338.jpg"/>
+                            <img  className ="img-adj" src= {Agepng} alt="AGE CALCULATOR AAPP"/>
                             <div className=" disc">
                                 <h3 className="project-dis">AGE-CALCULATOR-APP</h3>
                                 <p className="project-p">
-                                    The Age Calculator, is a user-friendly tool that makes calculating age quick and effortless.
+                                    I created an  Age Calculator, is a user-friendly tool that makes calculating age quick and effortless.
                                     </p>
                                 <div className="project-btns">
-                                 <button className="projects-btn">live site</button>
-                                    <button className="projects-btn">github </button>
+                                 <button className="projects-btn"><a href="https://main--boisterous-speculoos-899414.netlify.app/"target="_blank" rel="noopener noreferrer" > live site </a></button>
+                                    <button className="projects-btn"><a href="https://github.com/iyanu752/AGE-CALCULATOR-APP/"target="_blank" rel="noopener noreferrer" > Source Code </a> </button>
                                 </div>
                             </div>
                         </div>
@@ -89,13 +93,12 @@ function Projects () {
 
                     <div className="projects-spacing">
                         <div className="projects-div">
-                        <img className ="img-adj"  src="https://i.pinimg.com/564x/44/49/3d/44493dda088ecc4f4f103ce1940a2338.jpg"/>
+                        <img className ="img-adj"  src= {Face} alt="FACIAL RECOGNITION ATTENDANCE" />
                             <div className=" disc">
                                 <h3 className="project-dis">Facial-recognition-attendance-app</h3>
                                 <p className="project-p"> I created a facial recognition attendance application as my final year project for my University</p>
                                 <div className="project-btns">
-                                 <button className="projects-btn">live site</button>
-                                    <button className="projects-btn">github </button>
+                                    <button className="projects-btn"><a href="https://github.com/iyanu752/Facial-recognition-attendance-app/"target="_blank" rel="noopener noreferrer" > Source Code </a></button>
                                 </div>
                             </div>
                         </div>
@@ -106,13 +109,13 @@ function Projects () {
 
                     <div className="projects-spacing">
                         <div className="projects-div">
-                        <img className ="img-adj" src="https://i.pinimg.com/564x/44/49/3d/44493dda088ecc4f4f103ce1940a2338.jpg"/>
+                        <img className ="img-adj" src= {Huddle} alt="LANDING PAGE WITH THREE CURVED SECTIONS"/>
                             <div className=" disc">
                                 <h3 className="project-dis">huddle-landing-page-with-curved-sections</h3>
-                                <p className="project-p">a submission for the front end mentor challenge huddle-landing-page-with-curved-sections</p>
+                                <p className="project-p">   This is a submission i made for the front end mentor challenge huddle-landing-page-with-curved-sections</p>
                                 <div className="project-btns">
                                  <button className="projects-btn"><a href="https://iyanu752.github.io/huddle-landing-page-with-curved-sections/"target="_blank" rel="noopener noreferrer"> live site </a></button>
-                                    <button className="projects-btn"> <a href="https://github.com/iyanu752/huddle-landing-page-with-curved-sections"target="_blank" rel="noopener noreferrer"> github </a></button>
+                                    <button className="projects-btn"> <a href="https://github.com/iyanu752/huddle-landing-page-with-curved-sections"target="_blank" rel="noopener noreferrer"> Source Code </a></button>
                                 </div>
                             </div>
                         </div>

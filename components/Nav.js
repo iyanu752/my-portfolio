@@ -3,7 +3,8 @@ import React from "react";
 import Logo from "../icons/logo.png";
 import gitlogo from "../icons/icons8-github-64.png";
 import linkedinlogo from "../icons/icons8-linkedin-64.png";
-import { NavLink } from "react-router-dom";
+
+
 
 
 function Nav() {
@@ -25,20 +26,15 @@ function Nav() {
     window.addEventListener('scroll', changeBackground); 
 
 
-
    
     return(
 
-                 <nav className={navBar ? "nav-bar active" : "nav-bar" }>
+            <nav className={navBar ? "nav-bar active" : "nav-bar" }>
             <div className="flex-div">
             <div className="logo"><img className="logo" src= {Logo} alt="iyanu-logo" /></div>
             <div className="list-items">
             <ul className="el-ul">
-                <a className="nav-el" href="Home"><li>Home</li></a>
-                <a className="nav-el"  href="Skills"><li>Skills</li></a>
-                <a className="nav-el" href="Tools" ><li>Tools</li></a>
-                <a className="nav-el" href= "Projects" ><li>Projects</li></a>
-                <a className="nav-el" href="contact"> <li> Contact </li></a>
+
                 </ul>
             </div> 
              
